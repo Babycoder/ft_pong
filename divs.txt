@@ -1,0 +1,26 @@
+button :
+
+<div @click="onUpload" class="bg-blue-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 cursor-pointer">
+            upload
+        </div>
+
+
+
+Bar :
+
+    <div class="grid grid-cols-1 min-w-full border rounded">
+
+         <ul class="overflow-auto " style="height: 90vh;">
+                    <li>
+                        <div class="px-6"
+                        >
+                        <div class="flex   h-30 p-4 my-6  rounded-lg border border-gray-100 shadow-md">
+                            <p>
+                                {{this.login}}
+                            </p>
+                        </div>
+                        </div>
+                    </li>
+        </ul>
+        
+    </div>
