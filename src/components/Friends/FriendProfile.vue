@@ -13,13 +13,19 @@
         <div class="w-full p-8  mx-2 flex justify-center">
             <img id="showImage" class="rounded-full max-w-xs w-32 items-center border" :src="user_avatar">
         </div>
-        <div class="w-full p-8 mx-2 flex justify-around">
-        <div  class=" rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 cursor-pointer"
+        <div class="w-full p-8 mx-2 flex justify-center">
+        <div  class="w-28 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6"
         :class="addStyle"
         >
             {{msg_status}}
         </div>
+        <button  class="w-28 bg-blue-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 cursor-pointer"
+        >
+           Play
+        </button>
         </div>
+        <p> Wins : {{user.wins}}</p>
+        <p> Loses : {{user.loses}}</p>
     </div>
     
     <div class="w-full md:w-3/5 p-8 bg-white lg:ml-4 shadow-md">
@@ -85,6 +91,8 @@ export default defineComponent({
             msg_status : "offline",
             msg : "friendProfile component Helloooo",
             user : {
+                wins: 5 as number,
+                loses: 2 as number,
                 avatar_url: 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80' as string,
                 name: 'user name' as string,
                 status: 0 as number, // 0  offling 1 online 2 in game
