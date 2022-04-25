@@ -22,6 +22,8 @@
 import { defineComponent } from 'vue'
 import ManagerBlock from './components/manager.vue';
 import ErrorPageBlock from './components/ErrorPage.vue';
+import Navbar from './components/Friends/Navbar.vue';
+
 // import testApp from './components/test.vue'
 export default defineComponent({
   components: {

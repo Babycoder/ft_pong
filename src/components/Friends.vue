@@ -1,7 +1,8 @@
 <template>
   <div>
+  
   <Navbar />
-
+ 
   
   <div class="grid grid-cols-1 min-w-full">
     <ul class="overflow-auto" style="height: 90vh;">

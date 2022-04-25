@@ -39,6 +39,9 @@
                             <div class="flex items-center">
                                 <div class="ml-2">
                                         <img id="showImage" class="rounded-full max-w-xs w-32 items-center border" :src="players.user1_avatar">
+                                        <p class=' py-2 px-10 border-gray-900 text-gray-900 hover:shadow-md rounded-md cursor-pointer'>
+                                        Login
+                                        </p>
                                 </div>
                             </div>
                             
@@ -51,6 +54,9 @@
                             <div class="flex items-center">
                                 <div class="ml-5">
                                     <img id="showImage" class="rounded-full max-w-xs w-32 items-center border" :src="players.user2_avatar">
+                                    <p class=' py-2 px-10 border-gray-900 text-gray-900 hover:shadow-md rounded-md cursor-pointer'>
+                                        Login
+                                    </p>
                                 </div>
                             </div>
                             
